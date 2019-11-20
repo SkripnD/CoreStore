@@ -399,7 +399,7 @@ public final class DataStack: Equatable {
     internal static var defaultConfigurationName = "PF_DEFAULT_CONFIGURATION_NAME"
     
     internal let coordinator: NSPersistentStoreCoordinator
-    internal let rootSavingContext: NSManagedObjectContext
+    public let rootSavingContext: NSManagedObjectContext
     internal let mainContext: NSManagedObjectContext
     internal let schemaHistory: SchemaHistory
     internal let childTransactionQueue = DispatchQueue.serial("com.coreStore.dataStack.childTransactionQueue")
